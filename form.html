@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        h2 {
+            color: #009688;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+
+
+        .radio-group {
+            margin-top: 10px;
+        }
+
+        .radio-group label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        button {
+            margin-top: 30px;
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        a {
+            display: block;
+            margin-top: 30px;
+            color: #009688;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Recommendation & Suggestions</h2>
+
+    <form action="#" method="POST">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Your Name">
+
+        <label>Which tool should I prioritize?</label>
+        <select name="priority_tool">
+            <option value="python">Advanced Python</option>
+            <option value="pyspark">PySpark</option>
+            <option value="azure">Azure Data Factory</option>
+            <option value="databricks">Databricks</option>
+        </select>
+
+        <label>Additional Advice</label>
+        <textarea name="message" rows="5" placeholder="Write your advice here..."></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <a href="index.html">← Back to my CV</a>
+
+</body>
+
+</html>
